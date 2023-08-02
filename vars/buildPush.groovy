@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
 import com.script.Docker
 def call(String imgName) {
-    return new Docker(this).buildDockerImages(imgName)
+    return new Docker(this).dockerPush(imgName)
 }
